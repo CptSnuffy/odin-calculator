@@ -13,28 +13,39 @@
     <div id="calcparent">
         <div id="numberdisplay"></div>
         <div id="buttons">
-            <button onclick="clearText()" id="clear">C</button>
             <div id="numbers">
-                <button onclick="displayText('1')">1</button>
-                <button onclick="displayText('2')">2</button>
-                <button onclick="displayText('3')">3</button>
-                <button onclick="displayText('4')">4</button>
-                <button onclick="displayText('5')">5</button>
-                <button onclick="displayText('6')">6</button>
-                <button onclick="displayText('7')">7</button>
-                <button onclick="displayText('8')">8</button>
-                <button onclick="displayText('9')">9</button>
-                <button onclick="displayText('0')">0</button>
+                <div class="midbottomrow">
+                    <button onclick="displayText('1')">1</button>
+                    <button onclick="displayText('2')">2</button>
+                    <button onclick="displayText('3')">3</button>
+                </div>
+                <div class="midrow">
+                    <button onclick="displayText('4')">4</button>
+                    <button onclick="displayText('5')">5</button>
+                    <button onclick="displayText('6')">6</button>
+                </div>
+                <div class="midtoprow">
+                    <button onclick="displayText('7')">7</button>
+                    <button onclick="displayText('8')">8</button>
+                    <button onclick="displayText('9')">9</button>
+                </div>
+                <button class="bottomrow" onclick="displayText('0')">0</button>
             </div>
             <div id="operations">
-                <button onclick="displayText('+', true)">+</button>
-                <button onclick="displayText('-', true)">-</button>
-                <button onclick="displayText('*', true)">*</button>
-                <button onclick="displayText('/', true)">/</button>
-                <button onclick="displayText('.', true)">.</button>
-                <button onclick="displayText('(', true)">(</button>
-                <button onclick="displayText(')', true)">)</button>
-                <button onclick="parseNumbers()">=</button>
+                <button class="bottomrow" onclick="displayText('+', true)">+</button>
+                <button class="midbottomrow" onclick="displayText('-', true)">-</button>
+                <button class="midrow" onclick="displayText('*', true)">*</button>
+                <button class="midtoprow" onclick="displayText('/', true)">/</button>
+                <button class="bottomrow" onclick="parseNumbers()">=</button>
+            <div id="specialchars">
+                <div class="toprow">
+                    <button onclick="clearText()" id="clear">C</button>
+                    <button onclick="displayText('back')">DEL</button>
+                    <button onclick="displayText('(', true)">(</button>
+                    <button onclick="displayText(')', true)">)</button>
+                </div>
+                <button class="bottomrow" onclick="displayText('.', true)">.</button>
+            </div>
             </div>
         </div>
     </div>
